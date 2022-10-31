@@ -15,7 +15,7 @@
 }
 
 .section2 {
-    background-image: url(/assets/images/flower_foto1.png);
+    background-image: url(../../assets/images/flower_foto1.png);
     /* width: 293px;
     height: 605px; */
     background-position: right top;
@@ -23,13 +23,13 @@
 }
 
 .section3_animal_card {
-    background-image: url(/assets/images/palm_foto.png);
+    background-image: url(../../assets/images/palm_foto.png);
     /* width: 880px;
     height: 460px; */
     background-position: left bottom;
     background-repeat: no-repeat;
 
-    /* background-image: url(/assets/images/strelitzia_1.png);
+    /* background-image: url(../../assets/images/strelitzia_1.png);
     width: 368px;
     height: 275px;
     background-position: right bottom;
@@ -51,7 +51,7 @@
 }
 
 .section5 {
-    background-image: url(/assets/images/leav_foto.png);
+    background-image: url(../../assets/images/leav_foto.png);
     /* width: 300.92px;
     height: 295.45px; */
     background-position: right bottom;
