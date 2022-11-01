@@ -1,3 +1,46 @@
+.navbar {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    backdrop-filter: blur(2px);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0 0 0 220px;
+    padding: 0;
+}
+
+.navbar ul > li {
+    display: inline;
+    padding: 29px;
+}
+
+.navbar ul > li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar ul > li > a.active {
+    color: #F9804B;
+}
+
+.navbar ul > li > a:hover {
+    color: #F9804B;
+}
+
+.navbar ul > li > a.split {
+    position: absolute;
+    width: 105px;
+    height: 22px;
+    left: 1275px;
+    top: 29px;
+}
+
 .section1-ft {
     background-image: url(../../assets/images/Giant_Panda.jpg);
     width: 1600px;
@@ -12,6 +55,43 @@
     width: 465px;
     height: 465px;
     background-color: #F9804B;
+    position: absolute;
+    left: 807px;
+    top: 92px;
+}
+
+.section1-text {
+    font-size: 106px;
+    line-height: 75%;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 73px;
+    top: 74px;
+}
+
+.favorite {
+    color:#FFEE2E;
+}
+
+.btn-watch-online {
+    background-color: #F9804B;
+    border-radius: 25px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 140%;
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    left: 983px;
+    top: 626px;
+}
+
+.btn-watch-online:hover {
+    background-color: #E47209;
 }
 
 .section2 {
@@ -62,47 +142,3 @@ footer {
     background-color: #111115;
     color: #FFFFFF;
 }
-
-.navbar {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: #000000;
-    backdrop-filter: blur(2px);
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0 0 0 220px;
-    padding: 0;
-}
-
-.navbar ul > li {
-    display: inline;
-    padding: 29px;
-}
-
-.navbar ul > li > a {
-    display: inline-block;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.navbar ul > li > a.active {
-    color: #F9804B;
-}
-
-.navbar ul > li > a:hover {
-    color: #F9804B;
-}
-
-.navbar ul > li > a.split {
-    position: absolute;
-    width: 105px;
-    height: 22px;
-    left: 1275px;
-    top: 29px;
-}
-
