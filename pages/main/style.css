@@ -81,16 +81,19 @@
     color:#FFEE2E;
 }
 
-.btn-watch-online {
+.btn {
     background-color: #F9804B;
     border-radius: 25px;
     border-style: none;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 140%;
-    position: absolute;
     width: 298px;
     height: 54px;
+}
+
+.btn-watch-online {
+    position: absolute;
     left: 983px;
     top: 626px;
 }
@@ -148,20 +151,56 @@
 
 .section3_animal_card {
     background-image: url(../../assets/images/palm_foto.png);
-    /* width: 880px;
-    height: 460px; */
+    background-size: 880px 460px;
     background-position: left bottom;
     background-repeat: no-repeat;
-
-    /* background-image: url(../../assets/images/strelitzia_1.png);
-    width: 368px;
-    height: 275px;
-    background-position: right bottom;
-    background-repeat: no-repeat; */
+    width: 1158px;
+    height: 872px;
+    margin: 0 221px;
 }
 
-.section4 {
-    background-color: #FED290;
+.section3 {
+    background-image: url(../../assets/images/strelitzia_1.png);
+    background-size: 368px 275px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.section3-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.section3-grid-item {
+    text-align: left;
+    border: solid #F9804B;
+    width: 366px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.section3-with-no-right-margin {
+    margin-right: 0;
+}
+
+.section3-with-no-bottom-margin {
+    margin-right: 0;
+}
+.section3-grid-item div p:first-child {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.section3-grid-item div p:last-child {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+.section3-grid-item-image {
+    border-radius: 5px 5px 0 0;
 }
 
 .default-arrow-button {
@@ -172,6 +211,28 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     text-align: center;
     color: #FFFFFF;
+}
+
+.arrow-button-left {
+    position: absolute;
+    left: 138px;
+    top: 1906px;
+}
+
+.arrow-button-right {
+    position: absolute;
+    right: 140px;
+    top: 1906px;
+}
+
+.btn-favorite {
+    position: absolute;
+    left: 651px;
+    top: 2455px;
+}
+
+.section4 {
+    background-color: #FED290;
 }
 
 .section5 {
