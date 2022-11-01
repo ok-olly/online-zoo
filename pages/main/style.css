@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     position: absolute;
     width: 1600px;
@@ -11,12 +16,12 @@
 .navbar ul {
     list-style-type: none;
     margin: 0 0 0 220px;
-    padding: 0;
+    padding: 26px;
 }
 
 .navbar ul > li {
     display: inline;
-    padding: 29px;
+    padding: 0 29px;
 }
 
 .navbar ul > li > a {
@@ -44,7 +49,7 @@
 .section1-ft {
     background-image: url(../../assets/images/Giant_Panda.jpg);
     width: 1600px;
-    height: 700px;
+    height: 780px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -96,10 +101,49 @@
 
 .section2 {
     background-image: url(../../assets/images/flower_foto1.png);
-    /* width: 293px;
-    height: 605px; */
-    background-position: right top;
+    background-size: 293px 605px;
+    background-position: right;
     background-repeat: no-repeat;
+}
+
+.section2-flex {
+    display: flex;
+    width: 1161px;
+    height: 403px;
+    margin: 140px 219px 180px;
+}
+
+.section2-flex div {
+    width: 465px;
+    height: 116px;
+    margin-left: 87px;
+}
+
+.section2-flex div > h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.section2-text1 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.section2-text2 {
+    margin-top: 54px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.section2-text3 {
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 .section3_animal_card {
