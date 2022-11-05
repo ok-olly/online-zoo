@@ -1,16 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
-    position: absolute;
     width: 1600px;
     height: 80px;
-    left: 0px;
-    top: 0px;
     background: #000000;
     backdrop-filter: blur(2px);
+    margin: auto;
 }
 
 .navbar ul {
@@ -40,9 +39,7 @@
 
 .navbar ul > li > a.split {
     position: absolute;
-    width: 105px;
-    height: 22px;
-    left: 1275px;
+    right: 220px;
     top: 29px;
 }
 
@@ -53,16 +50,18 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    margin: -80px auto 0;
 }
 
 .Ellipse-6 {
+    position: relative;
+    left: 807px;
+    top: 92px;
+    margin: 0;
     border-radius: 100%;
     width: 465px;
     height: 465px;
     background-color: #F9804B;
-    position: absolute;
-    left: 807px;
-    top: 92px;
 }
 
 .section1-text {
@@ -78,7 +77,7 @@
 }
 
 .favorite {
-    color:#FFEE2E;
+    color: #FFEE2E;
 }
 
 .btn {
@@ -93,12 +92,12 @@
 }
 
 .btn-watch-online {
-    position: absolute;
+    position: relative;
     left: 983px;
-    top: 626px;
+    bottom: -160px;
 }
 
-.btn-watch-online:hover {
+.btn:hover {
     background-color: #E47209;
 }
 
@@ -113,12 +112,13 @@
     display: flex;
     width: 1161px;
     height: 403px;
-    margin: 140px 219px 180px;
+    margin: 140px auto 180px;
 }
 
 .section2-flex div {
     width: 465px;
     height: 116px;
+    margin-top: 0;
     margin-left: 87px;
 }
 
@@ -149,32 +149,44 @@
     line-height: 140%;
 }
 
-.section3_animal_card {
-    background-image: url(../../assets/images/palm_foto.png);
-    background-size: 880px 460px;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    width: 1158px;
-    height: 872px;
-    margin: 0 221px;
+.section3 {
+    background-image: url(../../assets/images/palm_foto.png), url(../../assets/images/strelitzia_1.png);
+    background-size: 880px 460px, 368px 275px;
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
 }
 
-.section3 {
+.section3_animal_card {
+    /* background-image: url(../../assets/images/palm_foto.png);
+    background-size: 880px 460px;
+    background-position: left bottom;
+    background-repeat: no-repeat; */
+    /* width: 1158px;
+    height: 872px;
+    margin: 0 auto; */
+}
+
+/* .section3 {
     background-image: url(../../assets/images/strelitzia_1.png);
     background-size: 368px 275px;
     background-position: right bottom;
     background-repeat: no-repeat;
-}
+} */
 
 .section3-grid {
     display: grid;
     grid-template-columns: auto auto auto;
+
+    width: 1158px;
+    height: 872px;
+    margin: 0 auto;
 }
 
 .section3-grid-item {
     text-align: left;
-    border: solid #F9804B;
+    outline: solid 1px #F9804B;
     width: 366px;
+    height: 426px;
     border-radius: 5px;
     margin-right: 30px;
     margin-bottom: 20px;
@@ -185,15 +197,16 @@
 }
 
 .section3-with-no-bottom-margin {
-    margin-right: 0;
+    margin-bottom: 0;
 }
-.section3-grid-item div p:first-child {
+
+.section3-grid-text div p:first-child {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
 }
 
-.section3-grid-item div p:last-child {
+.section3-grid-text p:last-child {
     font-weight: 300;
     font-size: 15px;
     line-height: 120%;
@@ -213,26 +226,123 @@
     color: #FFFFFF;
 }
 
+.default-arrow-button:hover {
+    background-color: #E47209;
+}
+
 .arrow-button-left {
-    position: absolute;
-    left: 138px;
-    top: 1906px;
+    position: relative;
+    top: -467px;
+    right: 82px;
 }
 
 .arrow-button-right {
-    position: absolute;
-    right: 140px;
-    top: 1906px;
+    position: relative;
+    /* top: -467px;
+    left: 0 */
 }
 
 .btn-favorite {
-    position: absolute;
-    left: 651px;
-    top: 2455px;
+    position: relative;
+    margin: 80px auto 100px;
+    /* left: 430px; */
+}
+
+.section3-grid-text {
+    float: left;
+}
+
+.section3-grid-icon {
+    float: right;
+}
+
+.section3-grid-item div {
+    padding: 8px 13px 14px 16px;
+}
+
+.section3-grid-item div:hover {
+    animation-name: section3-animation;
+    animation-duration: 2s;
+}
+
+@keyframes section3-animation {
+    from {background-color: #FFFFFF;}
+    to {background-color: #ABABAB;}
 }
 
 .section4 {
     background-color: #FED290;
+    padding-top: 69px;
+    padding-bottom: 100px;
+}
+
+.section4-container {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    width: 1160px;
+    height: 835px;
+    margin: auto;
+}
+
+.section4-text h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FE9013;
+    text-align: center;
+    padding-top: 41px;
+    margin-bottom: 30px;
+}
+
+.section4-p1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    padding-left: 99px;
+    margin-bottom: 40px;
+}
+
+.section4-p2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    padding-left: 99px;
+    margin-bottom: 10px;
+}
+
+.section4-p3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    padding-left: 99px;
+    width: 930px;
+    margin-bottom: 60px;
+}
+
+.section4 h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section4-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    padding-left: 198px;
+    padding-right: 198px;
+}
+
+/* .section4-grid-div {
+    width: 168px;
+    height: 244px;
+} */
+
+.btn-feed {
+    margin: 60px 431px 59px;
 }
 
 .section5 {
@@ -241,6 +351,55 @@
     height: 295.45px; */
     background-position: right bottom;
     background-repeat: no-repeat;
+}
+
+.section5-container {
+    width: 1160px;
+    height: 575px;
+    margin: 140px auto 204px;
+}
+
+.section5-container h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.section5-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.section5-grid-item {
+    width: 268px;
+    height: 391px;
+    border: solid 1px #FEBDAB;
+    border-radius: 20px;
+    background: #F1F3F2;
+    padding: 15px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.section5-no-right-margin {
+    margin-right: 0;
+}
+
+.section5-grid-item img {
+    float: left;
+    margin-right: 10px;
+}
+
+.progressbar {
+    width: 599px;
+    height: 8px;
+    margin: 21px 180px 31px;
+}
+
+.btn-leave-feedback {
+    border-radius: 5px;
 }
 
 footer {
