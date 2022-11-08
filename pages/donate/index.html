@@ -9,10 +9,77 @@
 </head>
 <body>
     <header>
-        <h1>desktop_donate index page</h1>
+        <nav class="navbar">
+            <div class="header-logo">
+                <a href="../main/index.html" target="_self">
+                    <h1>PetStory online</h1>
+                    <img class="header-logo-bamboo" src="../../assets/icons/bamboo.png" alt="bamboo">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a class="active" href="../main/index.html" target="_self">About</a>
+                </li>
+                <li>
+                    <a href="#" target="_self">Map</a>
+                </li>
+                <li>
+                    <a href="#" target="_self">Zoos</a>
+                </li>
+                <li>
+                    <a href="../donate/index.html" target="_blank">Donate</a>
+                </li>
+                <li>
+                    <a href="#" target="_self">Contact us</a>
+                </li>                
+                <li>
+                    <a class="split" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">Designed by &copy;</a>
+                </li>                
+            </ul>
+        </nav>
     </header>
     <main></main>
-    <footer></footer>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-grid-item">
+                <a href="../main/index.html" target="_self"><img class="footer-logo" src="../../assets/images/logo_footer.png" width="82" height="52"></a>
+                <button class="btn btn-donate" onclick="document.location='../donate/index.html'">DONATE FOR VOUNTEERS</button>
+                <div>
+                    <img class="footer-social-media" src="../../assets/icons/facebook.png" alt="Facebook" width="111" height="26">
+                    <img class="footer-social-media" src="../../assets/icons/twitter.png" alt="Twitter" width="89" height="26">
+                    <img class="footer-social-media" src="../../assets/icons/instagram.png" alt="Instagram">
+                    <img class="footer-social-media social-media-with-no-bottom-margin" src="../../assets/icons/youtube.png" alt="Youtube" width="101" height="26">
+                </div>
+            </div>
+            <div class="footer-grid-item footer-nav">
+                <ul>
+                    <li>
+                        <a class="active" href="#" target="_self">About</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Map</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Zoos</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-grid-item">
+                <form class="footer-subscribe">
+                    <p>Subscribe to our news</p>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button class="btn-submit" type="submit">Submit</button>
+                </form>
+                <div class="footer-copyright">
+                    <p class="footer-designed-by">Designed by Alisa Samborskaya</p>
+                    <p>&copy;RSSchool & &copy;Yem Digital 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../donate/script.js"></script>
 </body>
 </html>
