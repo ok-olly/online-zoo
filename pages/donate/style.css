@@ -76,6 +76,151 @@ h1 {
     top: 24.64px;
 }
 
+.section1-ft {
+    background-image: url(../../assets/images/Giant_Panda.jpg);
+    width: 1600px;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin: -80px auto 0;
+}
+
+.section2 {
+    height: 1482px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    position: relative;;
+}
+
+.section2-container {
+    margin: auto;
+    padding-top: 40px;
+    width: 1160px;
+}
+
+.section2-container h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.section2-even-though {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.section2-h3-orange {
+    color: #FE9013;
+}
+
+.section2-pick-and-feed {
+    margin-top: 60px;
+    width: 1160px;
+    height: 964px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 40px 92px 62px;
+}
+
+.section2-pick-and-feed h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+
+.section2-we-know {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.section2-number-4 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    /* text-align: center; */
+    color: #000000;
+    position: absolute;
+    left: 366px;
+    top: 312px;
+}
+
+.section2-panda-diet {
+    position: absolute;
+    top: 381px;
+    left: 307px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #333B41;
+}
+
+.x-icon {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 477px;
+    top: 337px;
+}
+
+.animal-widget {
+    position: absolute;
+    width: 284px;
+    height: 246px;
+    left: 555px;
+    top: 207px;
+}
+
+.section2-amount {
+    position: absolute;
+    width: 57px;
+    height: 22px;
+    left: 96px;
+    top: 501px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.bar {
+
+}
+
+.input-text {
+    position: absolute;
+    width: 268px;
+    height: 54px;
+    left: 446px;
+    top: 665px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 16px 9px;
+}
+
+.radio-mark {
+    border-radius: 50%;
+    border: 10px solid #FE9013;
+}
+
+
 .btn {
     background-color: #F9804B;
     border-radius: 25px;
@@ -89,8 +234,6 @@ h1 {
     width: 298px;
     height: 54px;
 }
-
-
 
 
 
@@ -109,8 +252,14 @@ footer {
 }
 
 .footer-logo {
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
     display: block;
     margin-bottom: 68px;
+    padding: 3.55px 4.75px;
+    position: relative;
 }
 
 .btn-donate {
