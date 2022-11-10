@@ -18,7 +18,7 @@
             </div>
             <ul>
                 <li>
-                    <a class="active" href="../main/index.html" target="_blank">About</a>
+                    <a href="../main/index.html" target="_blank">About</a>
                 </li>
                 <li>
                     <a href="#" target="_self">Map</a>
@@ -27,7 +27,7 @@
                     <a href="#" target="_self">Zoos</a>
                 </li>
                 <li>
-                    <a href="../donate/index.html" target="_self">Donate</a>
+                    <a class="active" href="../donate/index.html" target="_self">Donate</a>
                 </li>
                 <li>
                     <a href="#" target="_self">Contact us</a>
@@ -40,7 +40,6 @@
     </header>
     <main>
         <div class="section1-ft"></div>
-        <h2>sorry! I'm still working on this. I'll finish by Thursday!</h2>
         <div class="section2">
             <div class="section2-container">
                 <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
@@ -56,23 +55,18 @@
                     <p class="section2-amount">Amount</p>
                     <form>
                         <input class="bar" type="range">
-                        <input class="input-text" type="text" placeholder="Another amount &dollar;">
-                        <!-- <label id="monthly">
-                            <input class="radio-mark" type="radio" id="monthly" name="monthly">
-                            Monthly
-                            <span ></span>
-                        </label> -->
-                        <input type="radio" id="monthly" name="monthly">
-                        <label id="monthly">Monthly</label>
-                        <input type="radio" id="once" name="once">
-                        <label id="once">Once</label>
-                        <button class="btn" type="submit">Feed a friend now</button>
+                        <input class="input-number" type="number" maxlength="10" placeholder="Another amount &dollar;">
+                        <div class="radio-area">
+                            <input type="radio" id="monthly" name="donate" value="monthly">
+                            <label id="monthly">Monthly</label>
+                            <input type="radio" id="once" name="donate" checked="checked" value="once">
+                            <label id="once">Once</label>
+                        </div>
+                        <button class="btn btn-feed" type="submit">Feed a friend now</button>
                     </form>
-                    <p>Share with your friends on social networks</p>
+                    <p class="section2-share">Share with your friends on social networks</p>
                 </div>
             </div>
-
-            
         </div>
     </main>
     <footer>
