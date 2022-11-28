@@ -20,12 +20,12 @@
     margin: 29px 0 0 0;
 }
 
-.navbar ul > li {
+.navbar ul>li {
     display: inline;
     padding: 0 29px;
 }
 
-.navbar ul > li > a {
+.navbar ul>li>a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -36,15 +36,15 @@
     color: #FFFFFF;
 }
 
-.navbar ul > li > a.active {
+.navbar ul>li>a.active {
     color: #F9804B;
 }
 
-.navbar ul > li > a:hover {
+.navbar ul>li>a:hover {
     color: #F9804B;
 }
 
-.navbar ul > li > a.split {
+.navbar ul>li>a.split {
     position: absolute;
     right: 220px;
     top: 29px;
@@ -58,6 +58,10 @@
     margin: 14px 34px 14px 220px;
     padding: 3.55px 4.75px;
     position: relative;
+}
+
+.header-logo a {
+    text-decoration: none;
 }
 
 h1 {
@@ -143,6 +147,8 @@ h1 {
     background-size: 293px 605px;
     background-position: right;
     background-repeat: no-repeat;
+    width: 1600px;
+
 }
 
 .section2-flex {
@@ -159,7 +165,7 @@ h1 {
     margin-left: 87px;
 }
 
-.section2-flex div > h2 {
+.section2-flex div>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -203,6 +209,7 @@ h1 {
     background-size: 880px 460px, 368px 275px;
     background-position: left bottom, right bottom;
     background-repeat: no-repeat, no-repeat;
+    height: 1106px;
 }
 
 .section3-grid {
@@ -254,34 +261,36 @@ h1 {
 }
 
 .default-arrow-button {
-    border-radius: 50%;
     width: 62px;
     height: 62px;
-    background-color: #F9804B;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.default-arrow-button:hover {
-    background-color: #4B9200;
 }
 
 .arrow-button-left {
     position: relative;
     top: -467px;
     right: 82px;
+    background-image: url(../../assets/images/arrow_elips_2.png);
+}
+
+.arrow-button-left:hover {
+    background-image: url(../../assets/images/arrow_elips_2-2.png);
 }
 
 .arrow-button-right {
     position: relative;
     top: -467px;
     right: -782px;
+    background-image: url(../../assets/images/arrow_elips_1.png);
+}
+
+.arrow-button-right:hover {
+    background-image: url(../../assets/images/arrow_elips_1-2.png);
 }
 
 .btn-favorite {
-    position: relative;
-    margin: 80px 0 100px;
+    position: absolute;
+    top: 2455px;
+    left: calc(50% - 298px/2);
 }
 
 .section3-grid-text {
@@ -292,24 +301,16 @@ h1 {
     float: right;
 }
 
-.section3-grid-item div {
+.section3-text {
     padding: 8px 13px 14px 16px;
-}
-
-.section3-grid-item div:hover {
-    animation-name: section3-animation;
-    animation-duration: 2s;
-}
-
-@keyframes section3-animation {
-    from {background-color: #FFFFFF;}
-    to {background-color: #ABABAB;}
 }
 
 .section4 {
     background-color: #FED290;
     padding-top: 69px;
     padding-bottom: 100px;
+    width: 1600px;
+    margin: auto;
 }
 
 .section4-container {
@@ -504,8 +505,18 @@ footer {
 }
 
 .footer-logo {
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
     display: block;
     margin-bottom: 68px;
+    padding: 3.55px 4.75px;
+    position: relative;
+}
+
+.footer-logo a {
+    text-decoration: none;
 }
 
 .btn-donate {
@@ -531,12 +542,12 @@ footer {
     margin-top: 330px;
 }
 
-.footer-nav ul > li {
+.footer-nav ul>li {
     display: inline;
     padding: 0 29px;
 }
 
-.footer-nav ul > li > a {
+.footer-nav ul>li>a {
     display: inline-block;
     text-decoration: none;
     color: #FFFFFF;
@@ -547,11 +558,11 @@ footer {
     line-height: 140%;
 }
 
-.footer-nav ul > li > a.active {
+.footer-nav ul>li>a.active {
     color: #F9804B;
 }
 
-.footer-nav ul > li > a:hover {
+.footer-nav ul>li>a:hover {
     color: #F9804B;
 }
 
